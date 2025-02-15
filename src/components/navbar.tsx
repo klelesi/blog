@@ -14,7 +14,7 @@ export default function Navbar() {
                         <Logo/> <span className="sans font-semibold ml-3 text-xl">blog</span>
                     </Link>
 
-                    <Link href="https://github.com/klelesi/blog" className={'text-lg font-semibold ml-3 text-xl'}>
+                    <Link href="https://github.com/klelesi" className={'text-lg font-semibold ml-3 text-xl'}>
                         <FontAwesomeIcon icon={faGithub} />
                     </Link>
                 </div>
