@@ -4,6 +4,9 @@ export default function Home() {
     return (
         <div className={'grid grid-cols-auto gap-6'}>
             <div>
+                {page6()}
+            </div>
+            <div>
                 {page5()}
             </div>
             <div>
@@ -30,7 +33,7 @@ function page1() {
             <div className="card">
                 <p className={'text-sm'}>2. februar 2025, Miha Medven</p>
 
-                <h1>Začetek številka dve</h1>
+                <h2>Začetek številka dve</h2>
 
                 <p>Zopet se srečava. Miha in nov projekt. Teh je bilo skozi leta več, od Youtube videov, masterclassov,
                     spletnega slovarja sopomenk in drugih.</p>
@@ -52,7 +55,7 @@ function page2() {
             <div className="card">
                 <p className={'text-sm'}>3. februar 2025, Miha Medven</p>
 
-                <h1>Spoznavanje problemov</h1>
+                <h2>Spoznavanje problemov</h2>
 
                 <p>Vedno začneš na začetku. Zame je to dobro razumevanje problema. Šele ko dobro razumeš problem, ga lahko začneš reševati.</p>
 
@@ -70,7 +73,7 @@ function page3() {
             <div className="card">
                 <p className={'text-sm'}>8. februar 2025, Miha Medven</p>
 
-                <h1>MVP</h1>
+                <h2>MVP</h2>
 
                 <p>Problem bojda razumem, sedaj ga moram začeti reševati.</p>
 
@@ -88,7 +91,7 @@ function page4() {
             <div className="card">
                 <p className={'text-sm'}>15. februar 2025, Miha Medven</p>
 
-                <h1>API V1</h1>
+                <h2>API V1</h2>
 
                 <p>Čeprav se je v delu vmešalo življenje (bolni otroci), mi je uspelo narediti napredek pri izdelavi
                     APIja.</p>
@@ -106,13 +109,31 @@ function page5() {
             <div className="card">
                 <p className={'text-sm'}>23. februar 2025, Miha Medven</p>
 
-                <h1>Testna različica na test.klele.si</h1>
+                <h2>Testna različica na test.klele.si</h2>
 
                 <p>Imel sem srečo. Otroci so bili zdravi in imel sem dovolj energije za programiranje. Sem tudi
                     razmislil kako bi rad zapeljal projekt.</p>
 
                 <div className="mb-6 mt-12">
                     <Link href={{ pathname: "/testna-razlicica"}}>Preberi več.</Link>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+function page6() {
+    return (
+        <div className={'container prose'}>
+            <div className="card">
+                <p className={'text-sm'}>2. marec 2025, Miha Medven</p>
+
+                <h2>Auththentikacija</h2>
+
+                <p>Od sedaj se lahko prijaviš. Trenutno podpiram le GitHub, ampak za začetek bo to dovolj.</p>
+
+                <div className="mb-6 mt-12">
+                    <Link href={{ pathname: "/authentikacija"}}>Preberi več.</Link>
                 </div>
             </div>
         </div>
