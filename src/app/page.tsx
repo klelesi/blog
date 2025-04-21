@@ -4,6 +4,9 @@ export default function Home() {
     return (
         <div className={'grid grid-cols-auto gap-6'}>
             <div>
+                {page7()}
+            </div>
+            <div>
                 {page6()}
             </div>
             <div>
@@ -134,6 +137,24 @@ function page6() {
 
                 <div className="mb-6 mt-12">
                     <Link href={{ pathname: "/authentikacija"}}>Preberi več.</Link>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+function page7() {
+    return (
+        <div className={'container prose'}>
+            <div className="card">
+                <p className={'text-sm'}>21. april 2025, Miha Medven</p>
+
+                <h2>Dva meseca kasneje</h2>
+
+                <p>Skoraj dva meseca je minilo od zadnje objave. V tem času nisem počival, ampak pridno razvijal projekt, le objave nisem spisal.</p>
+
+                <div className="mb-6 mt-12">
+                    <Link href={{ pathname: "/dva-meseca-kasneje"}}>Preberi več.</Link>
                 </div>
             </div>
         </div>
